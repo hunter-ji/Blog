@@ -35,7 +35,7 @@ Vue原生支持菜单高亮，菜单中路由使用`<router-link>`。
 </template>
 
 <style scoped>
-  .router-link-class {
+  .router-link-active {
     background: lightblue;
     color: black;
   }

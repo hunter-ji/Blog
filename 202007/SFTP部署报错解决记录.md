@@ -29,7 +29,7 @@ permission denied
 ### 报错二
 
 ```bash
-bad ownership or modes for chroot directory component "<your-path>"
+bad ownership or modes for chroot directory component "/home"
 ```
 
 

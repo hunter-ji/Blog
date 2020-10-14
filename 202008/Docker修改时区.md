@@ -53,6 +53,33 @@ docker run --rm -it ubuntu:time date
 
 
 
+### 3. Debian
+
+* Debian中已经安装了`tzdata`，所以跟`Ubuntu`有所不通过
+
+```dockerfile
+FROM debian
+
+# 修改设置dpkg为自动配置
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+RUN dpkg-reconfigure -f noninteractive tzdata
+
+# 修改设置dpkg为手动输入选择操作
+ENV DEBIAN_FRONTEND=dialog
+```
+
+* 验证
+
+```bash
+docker build -t debian:time .
+docker run --rm -it debian:time date
+```
+
+
+
 ## 三. 结语
 
 此处不再列举太多，主要解决方式为安装`tzdata`，然后修改时区。

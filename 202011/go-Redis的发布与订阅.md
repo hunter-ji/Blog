@@ -196,11 +196,6 @@ func redisConnect() (rdb *redis.Client) {
 	return
 }
 
-func pubMessage(channel, msg string) {
-	rdb := redisConnect()
-	rdb.Publish(context.Background(), channel, msg)
-}
-
 func subMessage(channel string) {
 	rdb := redisConnect()
 	pubsub := rdb.Subscribe(context.Background(), channel)

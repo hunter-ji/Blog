@@ -32,14 +32,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// 白名单
 func whiteList() map[string]string {
 	return map[string]string{
 		"/ping": "GET",
 	}
 }
 
-// 检测是否在白名单中
 func withinWhiteList(url *url.URL, method string) bool {
 	target := whiteList()
 	queryUrl := strings.Split(fmt.Sprint(url), "?")[0]
@@ -68,15 +66,14 @@ func Authorize() gin.HandlerFunc {
 				})
 				return
 			}
-      
-      // 为了下个场景(路由权限)设置用户角色
-      // c.Set("role", "admin")
-      
+
+			c.Set("role", "user")
 		}
 
 		c.Next()
 	}
 }
+
 ```
 
 
@@ -162,6 +159,7 @@ func Permissions(roles []string) gin.HandlerFunc {
 		c.Next()
 	}
 }
+
 ```
 
 

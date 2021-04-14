@@ -65,11 +65,11 @@ services:
 
 点击`Add data sources`按钮，选择`Loki`。
 
-![截屏2021-04-14 下午2.02.57](../assets/截屏2021-04-14 下午2.02.57.png)
+![截屏2021-04-14 下午2.02.57](../assets/loki_2.png)
 
 填入`URL`即可，此处为`http://loki:3100`，具体要看实际部署。
 
-![截屏2021-04-14 下午2.03.47](../assets/截屏2021-04-14 下午2.03.47.png)
+![截屏2021-04-14 下午2.03.47](../assets/loki_3.png)
 
 然后点击`Sace & Test`添加。
 
@@ -77,11 +77,11 @@ services:
 
 在左侧菜单栏选择`Explore`进入页面，点击左上角的`Log brwser`按钮，可以查看该数据源的`labels`，如此处为日志文件。
 
-![截屏2021-04-14 下午2.08.48](../assets/截屏2021-04-14 下午2.08.48.png)
+![截屏2021-04-14 下午2.08.48](../assets/loki_4.png)
 
 在页面顶部的输入框中输入官方的`LogQL`可以筛选日志。此处日志就不展示了，大家知道有就行了。
 
-![截屏2021-04-14 下午2.11.09](../assets/截屏2021-04-14 下午2.11.09.png)
+![截屏2021-04-14 下午2.11.09](../assets/loki_5.png)
 
 
 
@@ -186,7 +186,7 @@ services:
 docker run --name hello -p 8080:80 --log-driver json-file --log-opt tag="{{.Name}}" -d nginx
 ```
 
-![截屏2021-04-14 下午1.55.57](../assets/截屏2021-04-14 下午1.55.57.png)
+![截屏2021-04-14 下午1.55.57](../assets/loki_1.png)
 
 对于使用container name，还有[另一种方案](https://github.com/grafana/loki/issues/333)，就是每次生成container_name和container_id的映射表，个人认为比较麻烦，有兴趣的小伙伴儿可以尝试下。
 

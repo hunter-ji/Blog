@@ -3,7 +3,7 @@
 ```swift
 @Environment(\.colorScheme) var colorScheme
 
-var isLigth: Bool {
+var isLight: Bool {
   colorScheme == .light
 }
 ```
@@ -14,7 +14,7 @@ var isLigth: Bool {
 
 ```swift
 Text("Hello, World !")
-	.foregroundColor(isLigth ? Color.red : Color.green)
+	.foregroundColor(isLight ? Color.red : Color.green)
 ```
 
 
@@ -28,13 +28,13 @@ struct CheckIsLight: View {
     
     @Environment(\.colorScheme) var colorScheme
 
-    var isLigth: Bool {
+    var isLight: Bool {
       colorScheme == .light
     }
     
     var body: some View {
         Text("Hello, World !")
-            .foregroundColor(isLigth ? Color.red : Color.green) // 此处使用isLght实现根据暗黑模式切换字体颜色
+            .foregroundColor(isLight ? Color.red : Color.green) // 此处使用isLght实现根据暗黑模式切换字体颜色
     }
 }
 

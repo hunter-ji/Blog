@@ -1,0 +1,23 @@
+{
+  "name": "kuari",
+  "version": "0.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "electron": "wait-on tcp:3000 && electron .",
+    "electron:serve": "concurrently -k \"yarn dev\" \"yarn electron\""
+  },
+  "dependencies": {
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "concurrently": "^6.3.0",
+    "cross-env": "^7.0.3",
+    "electron": "^15.1.2",
+    "vite": "^2.6.4",
+    "wait-on": "^6.0.0"
+  }
+}

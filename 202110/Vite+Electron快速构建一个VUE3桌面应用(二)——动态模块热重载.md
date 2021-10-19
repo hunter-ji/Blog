@@ -4,6 +4,8 @@
 
 因此，接着上一篇文章所完成的项目代码，我们来完成`Vite`和`Electron`开发时的动态模块热重载功能。
 
+源码：[https://github.com/Kuari/Blog/tree/master/Examples/vite_electron/vite_electron_2](https://github.com/Kuari/Blog/tree/master/Examples/vite_electron/vite_electron_2)
+
 
 
 ## 二. 思路

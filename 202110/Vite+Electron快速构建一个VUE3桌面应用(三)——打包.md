@@ -12,6 +12,7 @@
 
 * [Vite+Electron快速构建一个VUE3桌面应用](https://github.com/Kuari/Blog/issues/52)
 * [Vite+Electron快速构建一个VUE3桌面应用(二)——动态模块热重载](https://github.com/Kuari/Blog/issues/53)
+* [Vite+Electron快速构建一个VUE3桌面应用(三)——打包](https://github.com/Kuari/Blog/issues/54)
 
 
 
@@ -191,7 +192,7 @@ yarn add -D cross-env electron-builder
 
 
 
-最后，更新后的`package.json`完整内容入下：
+最后，更新后的`package.json`完整内容如下：
 
 ```json
 {

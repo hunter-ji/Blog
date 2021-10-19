@@ -4,7 +4,7 @@
 
 
 
-源码：
+源码：[https://github.com/Kuari/Blog/tree/master/Examples/vite_electron/vite_electron_3](https://github.com/Kuari/Blog/tree/master/Examples/vite_electron/vite_electron_3)
 
 
 
@@ -45,6 +45,8 @@
 │   └── preload.js
 ...
 ```
+
+若还是不太明白可以看看[源码](https://github.com/Kuari/Blog/tree/master/Examples/vite_electron/vite_electron_3)中文件结构。
 
 
 

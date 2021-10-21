@@ -14,5 +14,5 @@
 
 ## 公众号
 
-<img src="./assets/wx_qr.png" alt="微信公众号开发小橙" style="zoom: 50%;" />
+<img src="./assets/wx_qr.png" alt="微信公众号开发小橙" style="zoom: 23%;" />
 

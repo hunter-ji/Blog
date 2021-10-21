@@ -1,4 +1,4 @@
-# Vue 3 + Vite + Electron 的动态模块热重载
+# Vue 3 + Vite + Electron 的打包
 
 对应文章：[Vite+Electron快速构建一个VUE3桌面应用(三)——打包](https://github.com/Kuari/Blog/issues/54)
 

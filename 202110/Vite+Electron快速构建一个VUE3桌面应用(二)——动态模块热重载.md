@@ -4,7 +4,17 @@
 
 因此，接着上一篇文章所完成的项目代码，我们来完成`Vite`和`Electron`开发时的动态模块热重载功能。
 
+
+
 源码：[https://github.com/Kuari/Blog/tree/master/Examples/vite_electron/vite_electron_2](https://github.com/Kuari/Blog/tree/master/Examples/vite_electron/vite_electron_2)
+
+
+
+系列文章：
+
+* [Vite+Electron快速构建一个VUE3桌面应用](https://github.com/Kuari/Blog/issues/52)
+* [Vite+Electron快速构建一个VUE3桌面应用(二)——动态模块热重载](https://github.com/Kuari/Blog/issues/53)
+* [Vite+Electron快速构建一个VUE3桌面应用(三)——打包](https://github.com/Kuari/Blog/issues/54)
 
 
 

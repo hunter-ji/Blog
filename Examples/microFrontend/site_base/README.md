@@ -1,24 +1,5 @@
-# site_base
+对应文章：[VUE3+TS+微前端实践](https://github.com/Kuari/Blog/issues/61)
 
-## Project setup
-```
-yarn install
-```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<img src="../../assets/wx_qr.png" alt="公众号" style="zoom:23%;" />

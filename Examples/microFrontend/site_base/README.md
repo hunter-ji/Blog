@@ -2,4 +2,4 @@
 
 
 
-<img src="../../assets/wx_qr.png" alt="公众号" style="zoom:23%;" />
+<img src="../../../assets/wx_qr.png" alt="公众号" style="zoom:23%;" />

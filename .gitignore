@@ -4,8 +4,5 @@
 */*/.DS_Store
 */*/*/.DS_Store
 
-*/.icloud
-*/*/.icloud
-*/*/*/.icloud
-*/*/*/*/.icloud
+*.icloud
 

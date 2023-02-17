@@ -27,9 +27,17 @@
 
 ## 四. minio直传代码实现
 
-### 1. 生成client
+### 1. 安装minio.js
+
+```bash
+pnpm add -D minio
+```
+
+### 2. 生成client
 
 ```js
+import * as Minio from 'minio'
+
 const minioClient = new Minio.Client({
   region: 'cn-north-1', // region字段，极其有必要加上！我在sts场景，不加region字段就报错权限不够/心累...
   endPoint: '192.168.1.1', // minio的地址
@@ -41,7 +49,7 @@ const minioClient = new Minio.Client({
 })
 ```
 
-### 2. putObject直传方案
+### 3. putObject直传方案
 
 ```js
 putObject(bucketName, objectName, stream)
@@ -55,7 +63,7 @@ putObject(bucketName, objectName, stream)
 
 但是另外两个类型都是nodejs的啊...啊这...（也许是我错了，有大佬能够解决的请务必直接告诉我...）
 
-### 3. 折中方案
+### 4. 折中方案
 
 那么折中的方案就是由前端生成临时签名url，再由前端进行上传 /哭。
 
@@ -203,3 +211,6 @@ xhr.abort() // 取消上传
 
 
 
+## 七. 参考文档
+
+* [github.com/minio/minio-js](https://github.com/minio/minio-js)

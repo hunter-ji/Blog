@@ -14,5 +14,5 @@
 
 ## 公众号
 
-<img src="./assets/wx_qr.png" alt="微信公众号开发小橙" width="500" />
+<img src="./assets/wechat_qr.png" alt="微信公众号开发小橙" width="500" />
 

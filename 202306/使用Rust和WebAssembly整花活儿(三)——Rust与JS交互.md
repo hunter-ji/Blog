@@ -18,7 +18,16 @@
 
 源码：[github.com/Kuari/hello-wasm](https://github.com/Kuari/hello-wasm)
 
-# 二. 函数的相互调用
+
+
+# 二. 环境
+
+- Rust 1.70.0
+- wasm-bindgen 0.2.87
+
+
+
+# 三. 函数的相互调用
 
 ## 1. JS调用Rust函数
 
@@ -264,7 +273,7 @@ pub fn call_js_func() -> i32 {
 1. JS的函数必须要export，否则将无法调用；
 2. `raw_module`只能用来指定相对路径，并且，大家可以在浏览器的控制台中注意到，此处的`../`的相对路径，其实是以wasm文件而言的相对路径，这里一定要注意呀！
 
-# 三. JS调用Rust的struct
+# 四. JS调用Rust的struct
 
 现在，来点炸裂的，JS调用Rust的struct？！
 
@@ -336,7 +345,7 @@ impl User {
 
 这里直接添加一个`console.log(user)`，就可以在输出看到。那么到底在JS中是一个怎样的存在呢？请各位动手打印一下看看吧！:P
 
-# 四. 总结
+# 五. 总结
 
 本篇文章中，主要讲述了Rust与JS的交互，体现在Rust与JS的相互调用，这是建立在[上一篇文章](https://github.com/Kuari/Blog/issues/73)中类型转换的基础上的。
 
